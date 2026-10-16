@@ -1,0 +1,1489 @@
+[
+  {
+    "slug": "n8n",
+    "name": "n8n",
+    "tagline": "Fair-Code Workflow Automation & AI Agent Orchestrator",
+    "category": "Workflow Automation",
+    "categorySlug": "workflow-automation",
+    "githubRepo": "n8n-io/n8n",
+    "license": "Sustainable Use License",
+    "website": "https://n8n.io",
+    "affiliateKey": "n8n",
+    "replaces": [
+      "Zapier",
+      "Make",
+      "Workato"
+    ],
+    "shortDescription": "Node-based workflow automation tool with 400+ integrations and native LangChain AI agent workflows that you can self-host with unlimited executions.",
+    "dockerCommand": "docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n",
+    "setupDifficulty": "Easy (1-Click Templates Available)",
+    "setupTimeMinutes": 10,
+    "githubStats": {
+      "stars": 207653,
+      "forks": 61152,
+      "openIssues": 1166,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v1.78.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 2,
+      "minStorageGb": 25,
+      "recVcpu": 2,
+      "recRamGb": 4,
+      "recStorageGb": 50,
+      "ramPer100UnitsGb": 0.5
+    },
+    "calculator": {
+      "unitLabel": "Monthly Workflow Tasks / Steps (in thousands)",
+      "unitSuffix": "k tasks/mo",
+      "minUnits": 5,
+      "maxUnits": 250,
+      "stepUnits": 5,
+      "defaultUnits": 50,
+      "saasName": "Zapier Professional",
+      "saasSlug": "zapier",
+      "saasBaseUsd": 29,
+      "saasIncludedUnits": 2,
+      "saasPerUnitUsd": 5.8,
+      "managedName": "n8n Cloud",
+      "managedBaseUsd": 24,
+      "managedIncludedUnits": 2.5,
+      "managedPerUnitUsd": 1.2
+    },
+    "pros": [
+      "Zero per-step or per-task tax\u2014run millions of webhook & AI operations for a flat $5\u2013$10/mo VPS cost",
+      "Multi-step branching, loops, custom JavaScript/Python code nodes included free",
+      "Native AI Agent, Vector Store, and local Ollama LLM integration",
+      "Full data residency for HIPAA/GDPR compliance"
+    ],
+    "cons": [
+      "Requires setting up reverse proxy (Caddy/Traefik) or using a 1-click Hostinger/Coolify template for HTTPS webhooks",
+      "High-concurrency webhook bursts require Redis queue mode and Postgres"
+    ]
+  },
+  {
+    "slug": "coolify",
+    "name": "Coolify",
+    "tagline": "Self-Hosted Open-Source Alternative to Heroku, Vercel & Netlify",
+    "category": "Cloud PaaS & Deployment",
+    "categorySlug": "cloud-paas-deployment",
+    "githubRepo": "coollabsio/coolify",
+    "license": "Apache-2.0",
+    "website": "https://coolify.io",
+    "affiliateKey": "vercel",
+    "replaces": [
+      "Vercel",
+      "Heroku",
+      "Render",
+      "Netlify"
+    ],
+    "shortDescription": "Turn any $5 VPS into your own Vercel/Heroku PaaS with automatic Git push deployments, free Let's Encrypt SSL, and 1-click databases.",
+    "dockerCommand": "curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash",
+    "setupDifficulty": "Easy (1-Line Install Script)",
+    "setupTimeMinutes": 5,
+    "githubStats": {
+      "stars": 63052,
+      "forks": 5670,
+      "openIssues": 654,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v4.0.0-beta.380"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 2,
+      "minStorageGb": 30,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 8.0
+    },
+    "calculator": {
+      "unitLabel": "Developer Seats & Hosted Apps/Databases",
+      "unitSuffix": "seats / services",
+      "minUnits": 1,
+      "maxUnits": 30,
+      "stepUnits": 1,
+      "defaultUnits": 6,
+      "saasName": "Vercel Pro + Heroku Stack",
+      "saasSlug": "vercel",
+      "saasBaseUsd": 20,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 25.0,
+      "managedName": "Coolify Cloud",
+      "managedBaseUsd": 5,
+      "managedIncludedUnits": 2,
+      "managedPerUnitUsd": 3.0
+    },
+    "pros": [
+      "No $20/seat developer tax\u2014invite your entire engineering team for $0 extra",
+      "Deploy Next.js, Node, Python, Go, Docker Compose, Postgres, Redis, and 200+ 1-click services",
+      "Built-in automated S3 database & volume backups",
+      "Manage multiple remote servers from a single control plane"
+    ],
+    "cons": [
+      "Build spikes (like Next.js/TypeScript compilation) need at least 4GB RAM or swap space enabled",
+      "You are responsible for basic OS updates on the underlying VPS"
+    ]
+  },
+  {
+    "slug": "supabase",
+    "name": "Supabase",
+    "tagline": "The Open-Source Firebase Alternative Built on PostgreSQL",
+    "category": "Backend & Databases",
+    "categorySlug": "backend-databases",
+    "githubRepo": "supabase/supabase",
+    "license": "Apache-2.0",
+    "website": "https://supabase.com",
+    "affiliateKey": "supabase",
+    "replaces": [
+      "Firebase",
+      "AWS Amplify",
+      "Auth0"
+    ],
+    "shortDescription": "Full Postgres database with instant REST/GraphQL APIs, Authentication, Row-Level Security, Realtime subscriptions, Edge Functions, and S3-compatible Storage.",
+    "dockerCommand": "git clone --depth 1 https://github.com/supabase/supabase && cd supabase/docker && docker compose up -d",
+    "setupDifficulty": "Moderate (Multi-Container Docker Stack)",
+    "setupTimeMinutes": 20,
+    "githubStats": {
+      "stars": 111649,
+      "forks": 17030,
+      "openIssues": 1170,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v1.220.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 50,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 100,
+      "ramPer100UnitsGb": 2.0
+    },
+    "calculator": {
+      "unitLabel": "Monthly Active Users (MAUs in thousands)",
+      "unitSuffix": "k MAUs",
+      "minUnits": 10,
+      "maxUnits": 500,
+      "stepUnits": 10,
+      "defaultUnits": 100,
+      "saasName": "Firebase + Auth0 Paid Tier",
+      "saasSlug": "firebase",
+      "saasBaseUsd": 35,
+      "saasIncludedUnits": 10,
+      "saasPerUnitUsd": 3.25,
+      "managedName": "Supabase Pro Cloud",
+      "managedBaseUsd": 25,
+      "managedIncludedUnits": 100,
+      "managedPerUnitUsd": 0.325
+    },
+    "pros": [
+      "Unlimited Auth MAUs, database rows, and egress bandwidth within your VPS allocation",
+      "100% standard PostgreSQL with pgvector for AI embeddings out of the box",
+      "Supported as a 1-click template in Coolify and Hostinger VPS",
+      "Never get hit by surprise serverless read/write billing spikes"
+    ],
+    "cons": [
+      "Full Docker stack runs ~12 containers (Kong, GoTrue, PostgREST, Studio, Postgres) requiring at least 4GB RAM",
+      "Database high-availability & point-in-time recovery require manual pgBackRest/WAL-G setup"
+    ]
+  },
+  {
+    "slug": "plausible",
+    "name": "Plausible Analytics",
+    "tagline": "Lightweight, Cookie-Free Open-Source Google Analytics Alternative",
+    "category": "Web & Product Analytics",
+    "categorySlug": "web-product-analytics",
+    "githubRepo": "plausible/analytics",
+    "license": "AGPL-3.0",
+    "website": "https://plausible.io",
+    "affiliateKey": "plausible",
+    "replaces": [
+      "Google Analytics",
+      "Fathom Analytics",
+      "Mixpanel"
+    ],
+    "shortDescription": "Privacy-friendly, GDPR-compliant web analytics (<1KB script) backed by ClickHouse for blazing-fast real-time traffic and conversion insights.",
+    "dockerCommand": "git clone https://github.com/plausible/community-edition && cd community-edition && docker compose up -d",
+    "setupDifficulty": "Easy (Docker Compose)",
+    "setupTimeMinutes": 15,
+    "githubStats": {
+      "stars": 29493,
+      "forks": 1903,
+      "openIssues": 60,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v2.1.4"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 2,
+      "recRamGb": 4,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 0.5
+    },
+    "calculator": {
+      "unitLabel": "Monthly Pageviews Across All Sites (in hundreds of thousands)",
+      "unitSuffix": "00k pageviews/mo",
+      "minUnits": 1,
+      "maxUnits": 100,
+      "stepUnits": 1,
+      "defaultUnits": 10,
+      "saasName": "Fathom / Commercial Privacy Analytics",
+      "saasSlug": "google-analytics",
+      "saasBaseUsd": 19,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 9.5,
+      "managedName": "Plausible Cloud",
+      "managedBaseUsd": 9,
+      "managedIncludedUnits": 0.1,
+      "managedPerUnitUsd": 6.5
+    },
+    "pros": [
+      "Track unlimited domains and tens of millions of monthly pageviews on a single $5\u2013$7 VPS",
+      "No annoying GDPR cookie banners required",
+      "Sub-1KB script loads fast and bypasses many adblockers when proxied on your domain",
+      "Clean single-page dashboard with UTM, goal conversion, and Search Console integration"
+    ],
+    "cons": [
+      "Uses ClickHouse database which prefers at least 4GB RAM for smooth aggregations",
+      "Community Edition releases twice a year compared to rolling Cloud updates"
+    ]
+  },
+  {
+    "slug": "umami",
+    "name": "Umami",
+    "tagline": "Ultra-Lightweight Privacy Web & Event Analytics",
+    "category": "Web & Product Analytics",
+    "categorySlug": "web-product-analytics",
+    "githubRepo": "umami-software/umami",
+    "license": "MIT",
+    "website": "https://umami.is",
+    "affiliateKey": "plausible",
+    "replaces": [
+      "Google Analytics",
+      "Plausible",
+      "Heap"
+    ],
+    "shortDescription": "Fast, MIT-licensed web and custom event analytics that runs on PostgreSQL or MySQL with minimal RAM overhead.",
+    "dockerCommand": "docker pull ghcr.io/umami-software/umami:postgresql-latest",
+    "setupDifficulty": "Easy (Single Container + Postgres)",
+    "setupTimeMinutes": 8,
+    "githubStats": {
+      "stars": 39415,
+      "forks": 8326,
+      "openIssues": 106,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v2.16.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 1,
+      "minStorageGb": 20,
+      "recVcpu": 2,
+      "recRamGb": 2,
+      "recStorageGb": 40,
+      "ramPer100UnitsGb": 0.25
+    },
+    "calculator": {
+      "unitLabel": "Monthly Tracked Events & Pageviews (in hundreds of thousands)",
+      "unitSuffix": "00k events/mo",
+      "minUnits": 1,
+      "maxUnits": 100,
+      "stepUnits": 1,
+      "defaultUnits": 10,
+      "saasName": "Commercial Event Analytics",
+      "saasSlug": "google-analytics",
+      "saasBaseUsd": 20,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 8.0,
+      "managedName": "Umami Cloud",
+      "managedBaseUsd": 20,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 6.0
+    },
+    "pros": [
+      "Extremely low memory footprint\u2014runs comfortably on a 1GB\u20132GB RAM VPS alongside other apps",
+      "Permissive MIT license allows white-labeling for client agencies",
+      "Built-in funnel analysis, retention reports, and custom user properties"
+    ],
+    "cons": [
+      "At 50M+ monthly events, PostgreSQL requires index tuning compared to ClickHouse"
+    ]
+  },
+  {
+    "slug": "posthog",
+    "name": "PostHog",
+    "tagline": "All-in-One Open-Source Product Analytics, Session Replay & Feature Flags",
+    "category": "Web & Product Analytics",
+    "categorySlug": "web-product-analytics",
+    "githubRepo": "PostHog/posthog",
+    "license": "MIT / Fair-Code",
+    "website": "https://posthog.com",
+    "affiliateKey": "posthog",
+    "replaces": [
+      "Mixpanel",
+      "Amplitude",
+      "FullStory",
+      "LaunchDarkly"
+    ],
+    "shortDescription": "Complete product OS combining event analytics, session recordings, feature flags, A/B testing, and user surveys.",
+    "dockerCommand": "/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/posthog/posthog/HEAD/bin/deploy-hobby)\"",
+    "setupDifficulty": "Advanced (Heavy Stack with ClickHouse & Kafka)",
+    "setupTimeMinutes": 30,
+    "githubStats": {
+      "stars": 40305,
+      "forks": 3518,
+      "openIssues": 5676,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "latest"
+    },
+    "vpsRequirements": {
+      "minVcpu": 4,
+      "minRamGb": 8,
+      "minStorageGb": 80,
+      "recVcpu": 4,
+      "recRamGb": 16,
+      "recStorageGb": 160,
+      "ramPer100UnitsGb": 2.0
+    },
+    "calculator": {
+      "unitLabel": "Monthly Product Events (in millions)",
+      "unitSuffix": "M events/mo",
+      "minUnits": 1,
+      "maxUnits": 50,
+      "stepUnits": 1,
+      "defaultUnits": 10,
+      "saasName": "Mixpanel + LaunchDarkly + FullStory",
+      "saasSlug": "mixpanel",
+      "saasBaseUsd": 150,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 38.0,
+      "managedName": "PostHog Cloud",
+      "managedBaseUsd": 0,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 25.0
+    },
+    "pros": [
+      "Replaces 4 separate SaaS subscriptions (Mixpanel, FullStory, LaunchDarkly, Typeform)",
+      "Keep sensitive user session replays on your own isolated infrastructure"
+    ],
+    "cons": [
+      "Requires at least 8GB\u201316GB RAM VPS due to ClickHouse, Kafka, and Redis services",
+      "PostHog Cloud already has a generous free tier (1M events/mo free) for small teams"
+    ]
+  },
+  {
+    "slug": "immich",
+    "name": "Immich",
+    "tagline": "High-Performance Self-Hosted Google Photos & iCloud Replacement",
+    "category": "Productivity & Collaboration",
+    "categorySlug": "productivity-collaboration",
+    "githubRepo": "immich-app/immich",
+    "license": "AGPL-3.0",
+    "website": "https://immich.app",
+    "affiliateKey": "google-workspace",
+    "replaces": [
+      "Google Photos",
+      "iCloud+",
+      "Dropbox"
+    ],
+    "shortDescription": "Self-hosted photo and video backup solution with native iOS/Android mobile auto-backup, facial recognition, and AI smart search.",
+    "dockerCommand": "wget -O docker-compose.yml https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml && docker compose up -d",
+    "setupDifficulty": "Easy (Docker Compose)",
+    "setupTimeMinutes": 10,
+    "githubStats": {
+      "stars": 116409,
+      "forks": 7234,
+      "openIssues": 717,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v1.126.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 100,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 200,
+      "ramPer100UnitsGb": 1.0
+    },
+    "calculator": {
+      "unitLabel": "Family / Team Cloud Storage Needed (in ratusan GB / Terabytes)",
+      "unitSuffix": "00 GB storage",
+      "minUnits": 2,
+      "maxUnits": 100,
+      "stepUnits": 2,
+      "defaultUnits": 20,
+      "saasName": "Google One / Dropbox Family Plans",
+      "saasSlug": "google-workspace",
+      "saasBaseUsd": 9.99,
+      "saasIncludedUnits": 2,
+      "saasPerUnitUsd": 1.8,
+      "managedName": "Managed Nextcloud / PikaPods",
+      "managedBaseUsd": 8,
+      "managedIncludedUnits": 2,
+      "managedPerUnitUsd": 1.2
+    },
+    "pros": [
+      "Polished iOS and Android apps that feel identical to Google Photos",
+      "Local machine-learning CLIP search ('dog on a beach at sunset') and facial clustering",
+      "Full original quality without cloud compression or privacy scanning"
+    ],
+    "cons": [
+      "Initial ML facial recognition indexing uses significant CPU/RAM",
+      "Always pair your VPS with an automated off-site backup (e.g. Backblaze B2 or Hetzner Storage Box)"
+    ]
+  },
+  {
+    "slug": "ghost",
+    "name": "Ghost",
+    "tagline": "Open-Source Publishing, Newsletter & Paid Membership Platform",
+    "category": "Marketing & Forms",
+    "categorySlug": "marketing-forms",
+    "githubRepo": "TryGhost/Ghost",
+    "license": "MIT",
+    "website": "https://ghost.org",
+    "affiliateKey": "mailchimp",
+    "replaces": [
+      "Substack",
+      "Beehiiv",
+      "Medium",
+      "WordPress VIP"
+    ],
+    "shortDescription": "Modern headless/full-stack publishing and newsletter platform with 0% platform transaction fees on paid Stripe memberships.",
+    "dockerCommand": "docker run -d --name ghost -e NODE_ENV=production -p 2368:2368 ghost:5-alpine",
+    "setupDifficulty": "Easy (1-Click DigitalOcean/Hostinger Image)",
+    "setupTimeMinutes": 10,
+    "githubStats": {
+      "stars": 55547,
+      "forks": 11996,
+      "openIssues": 208,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v5.112.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 2,
+      "minStorageGb": 25,
+      "recVcpu": 2,
+      "recRamGb": 4,
+      "recStorageGb": 50,
+      "ramPer100UnitsGb": 0.4
+    },
+    "calculator": {
+      "unitLabel": "Newsletter Subscribers (in thousands)",
+      "unitSuffix": "k subscribers",
+      "minUnits": 1,
+      "maxUnits": 100,
+      "stepUnits": 1,
+      "defaultUnits": 15,
+      "saasName": "Substack (10% Cut) / Beehiiv Scale",
+      "saasSlug": "mailchimp",
+      "saasBaseUsd": 39,
+      "saasIncludedUnits": 2,
+      "saasPerUnitUsd": 4.5,
+      "managedName": "Ghost(Pro) Managed",
+      "managedBaseUsd": 25,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 3.5
+    },
+    "pros": [
+      "Keep 100% of your paid newsletter revenue (Substack takes a massive 10% cut forever!)",
+      "Built-in SEO, schema markup, AMP, and native newsletter sending via Mailgun/SES",
+      "Blazing fast Node.js runtime compared to bloated WordPress plugins"
+    ],
+    "cons": [
+      "Bulk email delivery requires connecting a Mailgun or AWS SES account"
+    ]
+  },
+  {
+    "slug": "listmonk",
+    "name": "Listmonk",
+    "tagline": "High-Performance Self-Hosted Newsletter & Mailing List Manager",
+    "category": "Marketing & Forms",
+    "categorySlug": "marketing-forms",
+    "githubRepo": "knadh/listmonk",
+    "license": "AGPL-3.0",
+    "website": "https://listmonk.app",
+    "affiliateKey": "mailchimp",
+    "replaces": [
+      "Mailchimp",
+      "ConvertKit",
+      "ActiveCampaign",
+      "Customer.io"
+    ],
+    "shortDescription": "Single-binary Go newsletter and transactional email manager backed by Postgres that sends millions of emails via Amazon SES for pennies.",
+    "dockerCommand": "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/knadh/listmonk/master/install-prod.sh)\"",
+    "setupDifficulty": "Easy (Single Go Binary + Postgres)",
+    "setupTimeMinutes": 8,
+    "githubStats": {
+      "stars": 23811,
+      "forks": 2684,
+      "openIssues": 93,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v4.1.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 1,
+      "minStorageGb": 20,
+      "recVcpu": 2,
+      "recRamGb": 2,
+      "recStorageGb": 40,
+      "ramPer100UnitsGb": 0.2
+    },
+    "calculator": {
+      "unitLabel": "Email Subscribers (in thousands)",
+      "unitSuffix": "k subscribers",
+      "minUnits": 5,
+      "maxUnits": 250,
+      "stepUnits": 5,
+      "defaultUnits": 50,
+      "saasName": "Mailchimp Standard / ConvertKit",
+      "saasSlug": "mailchimp",
+      "saasBaseUsd": 45,
+      "saasIncludedUnits": 5,
+      "saasPerUnitUsd": 7.2,
+      "managedName": "Listmonk + AWS SES ($0.10/1k)",
+      "managedBaseUsd": 10,
+      "managedIncludedUnits": 10,
+      "managedPerUnitUsd": 0.4
+    },
+    "pros": [
+      "Cuts email marketing bills by 95% when paired with AWS SES, Postmark, or SendGrid",
+      "Uses less than 100MB of RAM because it is written in compiled Go",
+      "Supports SQL-based subscriber segmentation, bounce webhooks, and transactional templates"
+    ],
+    "cons": [
+      "Does not include a drag-and-drop visual workflow builder (focused on fast campaigns & transactional APIs)"
+    ]
+  },
+  {
+    "slug": "nocodb",
+    "name": "NocoDB",
+    "tagline": "Open-Source Airtable Alternative That Turns Any SQL DB into a Smart Spreadsheet",
+    "category": "Productivity & Collaboration",
+    "categorySlug": "productivity-collaboration",
+    "githubRepo": "nocodb/nocodb",
+    "license": "AGPL-3.0",
+    "website": "https://nocodb.com",
+    "affiliateKey": "airtable",
+    "replaces": [
+      "Airtable",
+      "Smartsheet",
+      "Google Sheets"
+    ],
+    "shortDescription": "Connects to any Postgres, MySQL, or SQLite database and provides rich Grid, Kanban, Gallery, Form, and Calendar views with instant REST APIs.",
+    "dockerCommand": "docker run -d --name nocodb -v \"$(pwd)\"/nocodb:/usr/app/data/ -p 8080:8080 nocodb/nocodb:latest",
+    "setupDifficulty": "Easy (Single Docker Container)",
+    "setupTimeMinutes": 5,
+    "githubStats": {
+      "stars": 65290,
+      "forks": 5095,
+      "openIssues": 712,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v0.262.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 2,
+      "minStorageGb": 25,
+      "recVcpu": 2,
+      "recRamGb": 4,
+      "recStorageGb": 60,
+      "ramPer100UnitsGb": 1.0
+    },
+    "calculator": {
+      "unitLabel": "Team Collaborators / Editors",
+      "unitSuffix": "users",
+      "minUnits": 2,
+      "maxUnits": 100,
+      "stepUnits": 2,
+      "defaultUnits": 15,
+      "saasName": "Airtable Team / Business Plan",
+      "saasSlug": "airtable",
+      "saasBaseUsd": 24,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 24.0,
+      "managedName": "NocoDB Cloud",
+      "managedBaseUsd": 12,
+      "managedIncludedUnits": 3,
+      "managedPerUnitUsd": 8.0
+    },
+    "pros": [
+      "Eliminates Airtable's $24/user/month seat pricing AND 50,000 record-per-base ceiling",
+      "Stores data in real PostgreSQL so your database scales to millions of rows",
+      "Built-in webhook automations for Slack, Discord, Email, and n8n"
+    ],
+    "cons": [
+      "Complex Airtable scripting extensions need to be rewritten as webhooks or API calls"
+    ]
+  },
+  {
+    "slug": "chatwoot",
+    "name": "Chatwoot",
+    "tagline": "Open-Source Omnichannel Customer Support & Intercom Alternative",
+    "category": "CRM & Customer Support",
+    "categorySlug": "crm-customer-support",
+    "githubRepo": "chatwoot/chatwoot",
+    "license": "MIT",
+    "website": "https://www.chatwoot.com",
+    "affiliateKey": "intercom",
+    "replaces": [
+      "Intercom",
+      "Zendesk",
+      "Crisp",
+      "Freshdesk"
+    ],
+    "shortDescription": "Unified live chat widget, AI help center, Email, WhatsApp, Instagram, and Telegram support inbox without per-agent seat gouging.",
+    "dockerCommand": "wget https://get.chatwoot.app/linux/install.sh && chmod +x install.sh && ./install.sh --install",
+    "setupDifficulty": "Moderate (Rails + Sidekiq + Postgres + Redis)",
+    "setupTimeMinutes": 15,
+    "githubStats": {
+      "stars": 37860,
+      "forks": 9230,
+      "openIssues": 1601,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v3.16.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 4.0
+    },
+    "calculator": {
+      "unitLabel": "Support Agents / Team Seats",
+      "unitSuffix": "agents",
+      "minUnits": 2,
+      "maxUnits": 50,
+      "stepUnits": 1,
+      "defaultUnits": 8,
+      "saasName": "Intercom Essential / Pro",
+      "saasSlug": "intercom",
+      "saasBaseUsd": 78,
+      "saasIncludedUnits": 2,
+      "saasPerUnitUsd": 59.0,
+      "managedName": "Chatwoot Cloud",
+      "managedBaseUsd": 19,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 19.0
+    },
+    "pros": [
+      "Saves $5,000\u2013$25,000/yr compared to Intercom or Zendesk for growing support teams",
+      "Includes Captain AI assistant, public Help Center docs, and WhatsApp Business integration",
+      "1-click deployment available on DigitalOcean, Hostinger, and Coolify"
+    ],
+    "cons": [
+      "Ruby on Rails + Sidekiq background workers require at least 4GB RAM to avoid swap thrashing"
+    ]
+  },
+  {
+    "slug": "twenty",
+    "name": "Twenty CRM",
+    "tagline": "Modern Open-Source CRM Alternative to Salesforce, HubSpot & Attio",
+    "category": "CRM & Customer Support",
+    "categorySlug": "crm-customer-support",
+    "githubRepo": "twentyhq/twenty",
+    "license": "AGPL-3.0",
+    "website": "https://twenty.com",
+    "affiliateKey": "notion",
+    "replaces": [
+      "HubSpot",
+      "Salesforce",
+      "Pipedrive",
+      "Attio"
+    ],
+    "shortDescription": "Fast, keyboard-first modern CRM with custom objects, Kanban pipelines, email sync, and GraphQL/REST APIs.",
+    "dockerCommand": "curl -O https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml && docker compose up -d",
+    "setupDifficulty": "Easy (Docker Compose)",
+    "setupTimeMinutes": 10,
+    "githubStats": {
+      "stars": 58418,
+      "forks": 9557,
+      "openIssues": 112,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v0.42.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 2.0
+    },
+    "calculator": {
+      "unitLabel": "Sales & Ops CRM Users",
+      "unitSuffix": "seats",
+      "minUnits": 2,
+      "maxUnits": 50,
+      "stepUnits": 1,
+      "defaultUnits": 10,
+      "saasName": "HubSpot Sales Pro / Salesforce",
+      "saasSlug": "hubspot",
+      "saasBaseUsd": 90,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 90.0,
+      "managedName": "Twenty Cloud",
+      "managedBaseUsd": 9,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 9.0
+    },
+    "pros": [
+      "Lightning-fast Notion/Linear-inspired UI that sales teams actually enjoy using",
+      "No forced $1,000+ annual HubSpot onboarding fees or contact-tier price hikes",
+      "Full data ownership and custom object modeling"
+    ],
+    "cons": [
+      "Marketing automation emails are best handled via integration with Listmonk or n8n"
+    ]
+  },
+  {
+    "slug": "outline",
+    "name": "Outline",
+    "tagline": "Fast, Collaborative Team Knowledge Base & Notion/Confluence Alternative",
+    "category": "Knowledge Base & Docs",
+    "categorySlug": "knowledge-base-docs",
+    "githubRepo": "outline/outline",
+    "license": "BSL-1.1",
+    "website": "https://www.getoutline.com",
+    "affiliateKey": "notion",
+    "replaces": [
+      "Notion",
+      "Confluence",
+      "Slite",
+      "GitBook"
+    ],
+    "shortDescription": "Blazing-fast markdown wiki with real-time multiplayer editing, Slack integration, SSO, and instant full-text search.",
+    "dockerCommand": "docker pull docker.getoutline.com/outlinewiki/outline:latest",
+    "setupDifficulty": "Moderate (Requires OIDC/Google/Slack Auth Config)",
+    "setupTimeMinutes": 20,
+    "githubStats": {
+      "stars": 40920,
+      "forks": 3619,
+      "openIssues": 76,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v0.82.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 2,
+      "minStorageGb": 30,
+      "recVcpu": 2,
+      "recRamGb": 4,
+      "recStorageGb": 60,
+      "ramPer100UnitsGb": 1.0
+    },
+    "calculator": {
+      "unitLabel": "Team Members With Wiki Access",
+      "unitSuffix": "members",
+      "minUnits": 5,
+      "maxUnits": 150,
+      "stepUnits": 5,
+      "defaultUnits": 25,
+      "saasName": "Notion Plus / Business",
+      "saasSlug": "notion",
+      "saasBaseUsd": 12,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 12.0,
+      "managedName": "Outline Cloud",
+      "managedBaseUsd": 10,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 4.0
+    },
+    "pros": [
+      "Loads pages in <50ms\u2014significantly faster than Notion for large engineering handbooks",
+      "Native Markdown storage, slash commands, Mermaid diagrams, and backlinking",
+      "Includes Google Workspace, OIDC, and Slack login without an 'Enterprise SSO Tax'"
+    ],
+    "cons": [
+      "Requires setting up an OAuth provider (Google, GitHub, Discord, or Keycloak) during first-time setup"
+    ]
+  },
+  {
+    "slug": "plane",
+    "name": "Plane",
+    "tagline": "Open-Source Project Management Alternative to Jira, Linear & Asana",
+    "category": "Productivity & Collaboration",
+    "categorySlug": "productivity-collaboration",
+    "githubRepo": "makeplane/plane",
+    "license": "AGPL-3.0",
+    "website": "https://plane.so",
+    "affiliateKey": "linear",
+    "replaces": [
+      "Jira",
+      "Linear",
+      "Asana",
+      "Monday.com"
+    ],
+    "shortDescription": "Modern issue tracking, sprint cycles, roadmaps, and project wiki pages built for product and engineering teams.",
+    "dockerCommand": "curl -fsSL https://prime.plane.so/install/ | sh",
+    "setupDifficulty": "Easy (Official Install CLI)",
+    "setupTimeMinutes": 10,
+    "githubStats": {
+      "stars": 60940,
+      "forks": 6094,
+      "openIssues": 1128,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v0.25.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 2.0
+    },
+    "calculator": {
+      "unitLabel": "Team Members / Project Seats",
+      "unitSuffix": "seats",
+      "minUnits": 5,
+      "maxUnits": 150,
+      "stepUnits": 5,
+      "defaultUnits": 25,
+      "saasName": "Linear / Jira Standard + Confluence",
+      "saasSlug": "linear",
+      "saasBaseUsd": 10,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 12.0,
+      "managedName": "Plane Pro Cloud",
+      "managedBaseUsd": 8,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 8.0
+    },
+    "pros": [
+      "Combines issue tracking (Linear/Jira) and project documentation (Notion/Confluence) in one app",
+      "1-click importers from Jira, Linear, GitHub Issues, and Asana",
+      "Full sprint velocity analytics, Gantt views, and time tracking"
+    ],
+    "cons": [
+      "Needs at least 4GB RAM for Next.js frontend + Django API + Postgres + Redis containers"
+    ]
+  },
+  {
+    "slug": "cal-com",
+    "name": "Cal.com",
+    "tagline": "Open-Source Scheduling Infrastructure & Calendly Alternative",
+    "category": "Productivity & Collaboration",
+    "categorySlug": "productivity-collaboration",
+    "githubRepo": "calcom/cal.com",
+    "license": "AGPL-3.0",
+    "website": "https://cal.com",
+    "affiliateKey": "calendly",
+    "replaces": [
+      "Calendly",
+      "Chili Piper",
+      "SavvyCal",
+      "Acuity"
+    ],
+    "shortDescription": "Customizable meeting scheduling with round-robin routing, Stripe paid bookings, Google/Outlook sync, and white-label embeds.",
+    "dockerCommand": "git clone --recursive https://github.com/calcom/docker.git && cd docker && docker compose up -d",
+    "setupDifficulty": "Moderate (Requires Google/Microsoft Calendar API Keys)",
+    "setupTimeMinutes": 20,
+    "githubStats": {
+      "stars": 49067,
+      "forks": 15358,
+      "openIssues": 1513,
+      "lastCommit": "2026-09-26",
+      "latestRelease": "v4.9.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 2,
+      "recRamGb": 4,
+      "recStorageGb": 60,
+      "ramPer100UnitsGb": 1.0
+    },
+    "calculator": {
+      "unitLabel": "Team Members Scheduling Meetings",
+      "unitSuffix": "seats",
+      "minUnits": 2,
+      "maxUnits": 100,
+      "stepUnits": 2,
+      "defaultUnits": 12,
+      "saasName": "Calendly Teams / Enterprise",
+      "saasSlug": "calendly",
+      "saasBaseUsd": 16,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 16.0,
+      "managedName": "Cal.com Cloud Teams",
+      "managedBaseUsd": 12,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 12.0
+    },
+    "pros": [
+      "Free forever for individuals and saves $16/user/month for sales & recruiting teams",
+      "Supports collective events, round-robin lead routing, and workflow reminders",
+      "Accept Stripe payments directly on booking pages"
+    ],
+    "cons": [
+      "Setting up your own Google Calendar OAuth credentials in Google Cloud Console takes ~15 minutes"
+    ]
+  },
+  {
+    "slug": "documenso",
+    "name": "Documenso",
+    "tagline": "The Open-Source DocuSign & PandaDoc Alternative",
+    "category": "Productivity & Collaboration",
+    "categorySlug": "productivity-collaboration",
+    "githubRepo": "documenso/documenso",
+    "license": "AGPL-3.0",
+    "website": "https://documenso.com",
+    "affiliateKey": "docusign",
+    "replaces": [
+      "DocuSign",
+      "PandaDoc",
+      "Dropbox Sign"
+    ],
+    "shortDescription": "Legally binding cryptographic PDF document signing with reusable templates, webhooks, and custom branding.",
+    "dockerCommand": "docker run -d -p 3000:3000 --name documenso documenso/documenso:latest",
+    "setupDifficulty": "Easy (Docker + Postgres + SMTP)",
+    "setupTimeMinutes": 12,
+    "githubStats": {
+      "stars": 15434,
+      "forks": 3349,
+      "openIssues": 208,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v1.10.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 2,
+      "minStorageGb": 25,
+      "recVcpu": 2,
+      "recRamGb": 4,
+      "recStorageGb": 50,
+      "ramPer100UnitsGb": 0.5
+    },
+    "calculator": {
+      "unitLabel": "Team Senders / Envelopes (per 100 docs/mo)",
+      "unitSuffix": "senders / packs",
+      "minUnits": 1,
+      "maxUnits": 50,
+      "stepUnits": 1,
+      "defaultUnits": 6,
+      "saasName": "DocuSign Business Pro",
+      "saasSlug": "docusign",
+      "saasBaseUsd": 40,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 40.0,
+      "managedName": "Documenso Cloud",
+      "managedBaseUsd": 24,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 20.0
+    },
+    "pros": [
+      "No artificial 100-envelope annual caps like DocuSign imposes on standard plans",
+      "Embed signing flows directly inside your own SaaS application via API",
+      "Standard X.509 digital certificate signing for verifiable audit trails"
+    ],
+    "cons": [
+      "Requires generating or mounting a signing certificate (.p12) for cryptographic verification"
+    ]
+  },
+  {
+    "slug": "vaultwarden",
+    "name": "Vaultwarden",
+    "tagline": "Lightweight Rust Bitwarden Server & 1Password Alternative",
+    "category": "Security & DevOps",
+    "categorySlug": "security-devops",
+    "githubRepo": "dani-garcia/vaultwarden",
+    "license": "GPL-3.0",
+    "website": "https://github.com/dani-garcia/vaultwarden",
+    "affiliateKey": "1password",
+    "replaces": [
+      "1Password",
+      "LastPass",
+      "Dashlane",
+      "Bitwarden Enterprise"
+    ],
+    "shortDescription": "Unofficial Bitwarden-compatible server written in Rust that runs on minimal RAM and unlocks organization sharing, TOTP, and passkeys.",
+    "dockerCommand": "docker run -d --name vaultwarden -v /vw-data/:/data/ -p 80:80 vaultwarden/server:latest",
+    "setupDifficulty": "Easy (Single Ultra-Light Container)",
+    "setupTimeMinutes": 5,
+    "githubStats": {
+      "stars": 69160,
+      "forks": 3329,
+      "openIssues": 96,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "1.33.2"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 1,
+      "minStorageGb": 15,
+      "recVcpu": 1,
+      "recRamGb": 2,
+      "recStorageGb": 25,
+      "ramPer100UnitsGb": 0.1
+    },
+    "calculator": {
+      "unitLabel": "Employees / Team Vault Users",
+      "unitSuffix": "employees",
+      "minUnits": 5,
+      "maxUnits": 200,
+      "stepUnits": 5,
+      "defaultUnits": 25,
+      "saasName": "1Password Business",
+      "saasSlug": "1password",
+      "saasBaseUsd": 8,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 7.99,
+      "managedName": "Bitwarden Teams Cloud",
+      "managedBaseUsd": 4,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 4.0
+    },
+    "pros": [
+      "Works seamlessly with all official Bitwarden iOS, Android, Chrome, macOS, and Windows apps",
+      "Uses only ~25MB of RAM\u2014can share a $4.50 VPS with 5 other tools",
+      "Includes TOTP 2FA authenticator, emergency access, and organization collections free"
+    ],
+    "cons": [
+      "Requires HTTPS (handled automatically by Caddy, Cloudflare Tunnel, or Coolify) for WebCrypto browser extensions"
+    ]
+  },
+  {
+    "slug": "uptime-kuma",
+    "name": "Uptime Kuma",
+    "tagline": "Self-Hosted Uptime Monitoring & Status Page Alternative to Pingdom/BetterStack",
+    "category": "Security & DevOps",
+    "categorySlug": "security-devops",
+    "githubRepo": "louislam/uptime-kuma",
+    "license": "MIT",
+    "website": "https://uptime.kuma.pet",
+    "affiliateKey": "datadog",
+    "replaces": [
+      "Pingdom",
+      "BetterStack",
+      "UptimeRobot Pro",
+      "Statuspage.io"
+    ],
+    "shortDescription": "Beautiful self-hosted monitoring tool for HTTP(s), TCP, DNS, Docker containers, and SSL expiry with 90+ notification channels.",
+    "dockerCommand": "docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1",
+    "setupDifficulty": "Easy (Single Command)",
+    "setupTimeMinutes": 3,
+    "githubStats": {
+      "stars": 92556,
+      "forks": 8567,
+      "openIssues": 845,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "1.23.16"
+    },
+    "vpsRequirements": {
+      "minVcpu": 1,
+      "minRamGb": 1,
+      "minStorageGb": 20,
+      "recVcpu": 1,
+      "recRamGb": 2,
+      "recStorageGb": 40,
+      "ramPer100UnitsGb": 0.25
+    },
+    "calculator": {
+      "unitLabel": "Monitored Endpoints & Public Status Pages (in tens)",
+      "unitSuffix": "0 monitors",
+      "minUnits": 2,
+      "maxUnits": 100,
+      "stepUnits": 2,
+      "defaultUnits": 10,
+      "saasName": "BetterStack / Pingdom + Statuspage",
+      "saasSlug": "datadog",
+      "saasBaseUsd": 29,
+      "saasIncludedUnits": 2,
+      "saasPerUnitUsd": 7.5,
+      "managedName": "UptimeRobot Pro",
+      "managedBaseUsd": 15,
+      "managedIncludedUnits": 5,
+      "managedPerUnitUsd": 3.0
+    },
+    "pros": [
+      "20-second check intervals and unlimited public branded status pages for $0 extra",
+      "Instant alerts to Slack, Telegram, Discord, PagerDuty, Teams, and Webhook",
+      "Zero external database dependencies (uses embedded SQLite)"
+    ],
+    "cons": [
+      "Best hosted on an independent cheap VPS outside your primary production cluster so it can alert if production goes down"
+    ]
+  },
+  {
+    "slug": "meilisearch",
+    "name": "Meilisearch",
+    "tagline": "Lightning-Fast Rust Search Engine & Algolia Alternative",
+    "category": "Backend & Databases",
+    "categorySlug": "backend-databases",
+    "githubRepo": "meilisearch/meilisearch",
+    "license": "MIT",
+    "website": "https://www.meilisearch.com",
+    "affiliateKey": "algolia",
+    "replaces": [
+      "Algolia",
+      "Elasticsearch Cloud",
+      "Amazon CloudSearch"
+    ],
+    "shortDescription": "Typo-tolerant, sub-50ms instant search and AI hybrid vector search engine that drops straight into e-commerce and SaaS apps.",
+    "dockerCommand": "docker run -it --rm -p 7700:7700 -v $(pwd)/meili_data:/meili_data getmeili/meilisearch:v1.12",
+    "setupDifficulty": "Easy (Single Binary / Docker)",
+    "setupTimeMinutes": 5,
+    "githubStats": {
+      "stars": 59585,
+      "forks": 2739,
+      "openIssues": 321,
+      "lastCommit": "2026-10-15",
+      "latestRelease": "v1.12.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 1.5
+    },
+    "calculator": {
+      "unitLabel": "Monthly Search Requests & Indexed Records (in hundreds of thousands)",
+      "unitSuffix": "00k searches/mo",
+      "minUnits": 1,
+      "maxUnits": 100,
+      "stepUnits": 1,
+      "defaultUnits": 10,
+      "saasName": "Algolia Grow / Elevate",
+      "saasSlug": "algolia",
+      "saasBaseUsd": 35,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 50.0,
+      "managedName": "Meilisearch Cloud",
+      "managedBaseUsd": 30,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 15.0
+    },
+    "pros": [
+      "No per-search-request metered billing\u2014users can type-ahead search without racking up a $500 Algolia bill",
+      "Zero configuration typo-tolerance, synonyms, faceted filtering, and geo-search",
+      "Supports hybrid semantic + keyword search with OpenAI or local embeddings"
+    ],
+    "cons": [
+      "Memory-mapped index performs best when dataset fits comfortably in VPS RAM"
+    ]
+  },
+  {
+    "slug": "nextcloud",
+    "name": "Nextcloud Hub",
+    "tagline": "Complete Self-Hosted Google Workspace & Microsoft 365 Alternative",
+    "category": "Productivity & Collaboration",
+    "categorySlug": "productivity-collaboration",
+    "githubRepo": "nextcloud/server",
+    "license": "AGPL-3.0",
+    "website": "https://nextcloud.com",
+    "affiliateKey": "google-workspace",
+    "replaces": [
+      "Google Workspace",
+      "Microsoft 365",
+      "Dropbox",
+      "Box"
+    ],
+    "shortDescription": "Private cloud file sync, real-time Docs/Sheets editing, Calendar, Mail, and video calls in one unified workspace.",
+    "dockerCommand": "docker run --init --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always -p 8080:8080 nextcloud/all-in-one:latest",
+    "setupDifficulty": "Easy (All-in-One Docker Installer)",
+    "setupTimeMinutes": 15,
+    "githubStats": {
+      "stars": 37143,
+      "forks": 5282,
+      "openIssues": 3832,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v30.0.4"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 80,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 200,
+      "ramPer100UnitsGb": 4.0
+    },
+    "calculator": {
+      "unitLabel": "Company Users / Team Accounts",
+      "unitSuffix": "users",
+      "minUnits": 5,
+      "maxUnits": 200,
+      "stepUnits": 5,
+      "defaultUnits": 25,
+      "saasName": "Google Workspace Business Standard",
+      "saasSlug": "google-workspace",
+      "saasBaseUsd": 14,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 14.0,
+      "managedName": "Hetzner Storage Share (Managed Nextcloud)",
+      "managedBaseUsd": 6,
+      "managedIncludedUnits": 10,
+      "managedPerUnitUsd": 0.8
+    },
+    "pros": [
+      "Replaces Google Drive, Docs, Calendar, and Zoom with zero per-user licensing fees",
+      "Desktop and mobile auto-sync clients for Windows, macOS, Linux, iOS, and Android",
+      "Over 300+ modular apps in the Nextcloud App Store"
+    ],
+    "cons": [
+      "Collabora Online document editing container needs at least 4GB\u20138GB RAM for smooth multi-user editing"
+    ]
+  },
+  {
+    "slug": "mattermost",
+    "name": "Mattermost",
+    "tagline": "Secure Open-Source Team Messaging & Slack / Microsoft Teams Alternative",
+    "category": "Productivity & Collaboration",
+    "categorySlug": "productivity-collaboration",
+    "githubRepo": "mattermost/mattermost",
+    "license": "MIT / AGPL-3.0",
+    "website": "https://mattermost.com",
+    "affiliateKey": "slack",
+    "replaces": [
+      "Slack",
+      "Microsoft Teams",
+      "Discord"
+    ],
+    "shortDescription": "High-trust team chat, voice calls, screen sharing, and DevOps playbooks with unlimited message history.",
+    "dockerCommand": "git clone https://github.com/mattermost/docker && cd docker && docker compose -f docker-compose.yml -f docker-compose.without-nginx.yml up -d",
+    "setupDifficulty": "Easy (Docker Compose)",
+    "setupTimeMinutes": 12,
+    "githubStats": {
+      "stars": 39352,
+      "forks": 9052,
+      "openIssues": 1088,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v10.4.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 2.0
+    },
+    "calculator": {
+      "unitLabel": "Active Team Members in Chat",
+      "unitSuffix": "members",
+      "minUnits": 5,
+      "maxUnits": 250,
+      "stepUnits": 5,
+      "defaultUnits": 30,
+      "saasName": "Slack Pro / Business+",
+      "saasSlug": "slack",
+      "saasBaseUsd": 8.75,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 8.75,
+      "managedName": "Mattermost Cloud",
+      "managedBaseUsd": 10,
+      "managedIncludedUnits": 1,
+      "managedPerUnitUsd": 10.0
+    },
+    "pros": [
+      "Never lose access to chat history older than 90 days (unlike Slack's crippled free tier)",
+      "Slack-compatible incoming/outgoing webhook format makes migration effortless",
+      "Built-in voice calls, screen sharing, and incident response playbooks"
+    ],
+    "cons": [
+      "Mobile push notifications on self-hosted instances use Mattermost's TPNS relay or custom push proxy"
+    ]
+  },
+  {
+    "slug": "typebot",
+    "name": "Typebot",
+    "tagline": "Open-Source Conversational Forms & Typeform / Landbot Alternative",
+    "category": "Marketing & Forms",
+    "categorySlug": "marketing-forms",
+    "githubRepo": "baptisteArno/typebot.io",
+    "license": "AGPL-3.0",
+    "website": "https://typebot.io",
+    "affiliateKey": "zapier",
+    "replaces": [
+      "Typeform",
+      "Landbot",
+      "Tally Pro",
+      "ManyChat"
+    ],
+    "shortDescription": "Visual drag-and-drop conversational form and AI lead-generation chatbot builder that boosts conversion rates by up to 3x.",
+    "dockerCommand": "docker compose -f docker-compose.yml up -d",
+    "setupDifficulty": "Moderate (Builder + Viewer + Postgres + S3)",
+    "setupTimeMinutes": 18,
+    "githubStats": {
+      "stars": 10549,
+      "forks": 3237,
+      "openIssues": 17,
+      "lastCommit": "2026-10-15",
+      "latestRelease": "v3.2.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 2,
+      "recRamGb": 4,
+      "recStorageGb": 60,
+      "ramPer100UnitsGb": 0.5
+    },
+    "calculator": {
+      "unitLabel": "Monthly Form Submissions / Chats (in thousands)",
+      "unitSuffix": "k responses/mo",
+      "minUnits": 1,
+      "maxUnits": 100,
+      "stepUnits": 1,
+      "defaultUnits": 10,
+      "saasName": "Typeform Plus / Business",
+      "saasSlug": "typeform",
+      "saasBaseUsd": 59,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 9.0,
+      "managedName": "Typebot Cloud",
+      "managedBaseUsd": 39,
+      "managedIncludedUnits": 2,
+      "managedPerUnitUsd": 4.5
+    },
+    "pros": [
+      "Collect unlimited form responses and chat leads without Typeform's steep response tier paywalls",
+      "Native blocks for OpenAI, Google Sheets, Stripe payments, Cal.com, and webhooks",
+      "Embed as popup, bubble, or full-page form on any website or WhatsApp"
+    ],
+    "cons": [
+      "Requires configuring S3/MinIO storage if your forms accept user file uploads"
+    ]
+  },
+  {
+    "slug": "metabase",
+    "name": "Metabase",
+    "tagline": "Fast, Open-Source Business Intelligence & Tableau / Looker Alternative",
+    "category": "Web & Product Analytics",
+    "categorySlug": "web-product-analytics",
+    "githubRepo": "metabase/metabase",
+    "license": "AGPL-3.0",
+    "website": "https://www.metabase.com",
+    "affiliateKey": "posthog",
+    "replaces": [
+      "Tableau",
+      "Looker",
+      "PowerBI Pro",
+      "Mode"
+    ],
+    "shortDescription": "Connects to Postgres, MySQL, Snowflake, or BigQuery so anyone on your team can build interactive dashboards without knowing SQL.",
+    "dockerCommand": "docker run -d -p 3000:3000 --name metabase metabase/metabase:latest",
+    "setupDifficulty": "Easy (Single JVM Container + Postgres)",
+    "setupTimeMinutes": 8,
+    "githubStats": {
+      "stars": 49698,
+      "forks": 6906,
+      "openIssues": 4550,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "v0.52.4"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 2.0
+    },
+    "calculator": {
+      "unitLabel": "BI Dashboard Viewers & Analysts",
+      "unitSuffix": "users",
+      "minUnits": 5,
+      "maxUnits": 150,
+      "stepUnits": 5,
+      "defaultUnits": 20,
+      "saasName": "Tableau / Metabase Pro Cloud",
+      "saasSlug": "tableau",
+      "saasBaseUsd": 85,
+      "saasIncludedUnits": 5,
+      "saasPerUnitUsd": 18.0,
+      "managedName": "Metabase Starter Cloud",
+      "managedBaseUsd": 85,
+      "managedIncludedUnits": 5,
+      "managedPerUnitUsd": 5.0
+    },
+    "pros": [
+      "Give every employee in your company access to live BI dashboards for $0/seat",
+      "Automated daily Slack and Email KPI digest reports",
+      "Visual query builder + full SQL editor with parameterized variables"
+    ],
+    "cons": [
+      "Runs on the Java Virtual Machine (JVM), so allocate at least 2GB\u20134GB RAM to the container"
+    ]
+  },
+  {
+    "slug": "penpot",
+    "name": "Penpot",
+    "tagline": "Open-Source Web-Based UI/UX Design & Prototyping Alternative to Figma",
+    "category": "Productivity & Collaboration",
+    "categorySlug": "productivity-collaboration",
+    "githubRepo": "penpot/penpot",
+    "license": "MPL-2.0",
+    "website": "https://penpot.app",
+    "affiliateKey": "figma",
+    "replaces": [
+      "Figma",
+      "Sketch",
+      "Adobe XD"
+    ],
+    "shortDescription": "First open-source design tool built on native web standards (SVG & CSS Grid/Flexbox) so designers and developers speak the same language.",
+    "dockerCommand": "curl -o docker-compose.yaml https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml && docker compose -p penpot -f docker-compose.yaml up -d",
+    "setupDifficulty": "Easy (Docker Compose)",
+    "setupTimeMinutes": 10,
+    "githubStats": {
+      "stars": 61220,
+      "forks": 4233,
+      "openIssues": 853,
+      "lastCommit": "2026-10-16",
+      "latestRelease": "2.4.0"
+    },
+    "vpsRequirements": {
+      "minVcpu": 2,
+      "minRamGb": 4,
+      "minStorageGb": 40,
+      "recVcpu": 4,
+      "recRamGb": 8,
+      "recStorageGb": 80,
+      "ramPer100UnitsGb": 2.0
+    },
+    "calculator": {
+      "unitLabel": "Designers & Developer Dev-Mode Seats",
+      "unitSuffix": "seats",
+      "minUnits": 2,
+      "maxUnits": 80,
+      "stepUnits": 2,
+      "defaultUnits": 12,
+      "saasName": "Figma Organization / Pro + Dev Mode",
+      "saasSlug": "figma",
+      "saasBaseUsd": 15,
+      "saasIncludedUnits": 1,
+      "saasPerUnitUsd": 25.0,
+      "managedName": "Penpot Cloud",
+      "managedBaseUsd": 0,
+      "managedIncludedUnits": 5,
+      "managedPerUnitUsd": 7.0
+    },
+    "pros": [
+      "Eliminates Figma's controversial 'Dev Mode' seat fees for engineers inspecting designs",
+      "Native CSS Grid and Flexbox layout engine generates production-ready code",
+      "Keep confidential product prototypes on your own private server"
+    ],
+    "cons": [
+      "Community plugin ecosystem is growing rapidly but smaller than Figma's marketplace"
+    ]
+  }
+]
