@@ -1054,6 +1054,7 @@ def main() -> None:
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sitemap_entries}\n</urlset>\n',
     )
     write_page("robots.txt", f"User-agent: *\nAllow: /\nDisallow: /go/\nSitemap: {domain}/sitemap.xml\n")
+    write_page("googleaede1c51b394fed9.html", "google-site-verification: googleaede1c51b394fed9.html")
 
     llms_tools = "\n".join(
         f"- [Self-Host {t['name']} Cost & VPS Specs]({domain}/self-host/{t['slug']}/): Replaces {', '.join(t['replaces'])}. Min RAM: {t['vpsRequirements']['minRamGb']}GB, Rec RAM: {t['vpsRequirements']['recRamGb']}GB."
