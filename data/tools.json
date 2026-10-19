@@ -19,10 +19,10 @@
     "setupDifficulty": "Easy (1-Click Templates Available)",
     "setupTimeMinutes": 10,
     "githubStats": {
-      "stars": 207653,
-      "forks": 61152,
-      "openIssues": 1166,
-      "lastCommit": "2026-10-16",
+      "stars": 207989,
+      "forks": 61185,
+      "openIssues": 1210,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v1.78.0"
     },
     "vpsRequirements": {
@@ -83,10 +83,10 @@
     "setupDifficulty": "Easy (1-Line Install Script)",
     "setupTimeMinutes": 5,
     "githubStats": {
-      "stars": 63052,
-      "forks": 5670,
-      "openIssues": 654,
-      "lastCommit": "2026-10-16",
+      "stars": 63195,
+      "forks": 5690,
+      "openIssues": 589,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v4.0.0-beta.380"
     },
     "vpsRequirements": {
@@ -146,10 +146,10 @@
     "setupDifficulty": "Moderate (Multi-Container Docker Stack)",
     "setupTimeMinutes": 20,
     "githubStats": {
-      "stars": 111649,
-      "forks": 17030,
-      "openIssues": 1170,
-      "lastCommit": "2026-10-16",
+      "stars": 111765,
+      "forks": 17207,
+      "openIssues": 1166,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v1.220.0"
     },
     "vpsRequirements": {
@@ -209,10 +209,10 @@
     "setupDifficulty": "Easy (Docker Compose)",
     "setupTimeMinutes": 15,
     "githubStats": {
-      "stars": 29493,
-      "forks": 1903,
-      "openIssues": 60,
-      "lastCommit": "2026-10-16",
+      "stars": 29551,
+      "forks": 1913,
+      "openIssues": 58,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v2.1.4"
     },
     "vpsRequirements": {
@@ -272,10 +272,10 @@
     "setupDifficulty": "Easy (Single Container + Postgres)",
     "setupTimeMinutes": 8,
     "githubStats": {
-      "stars": 39415,
-      "forks": 8326,
-      "openIssues": 106,
-      "lastCommit": "2026-10-16",
+      "stars": 39458,
+      "forks": 8343,
+      "openIssues": 113,
+      "lastCommit": "2026-10-17",
       "latestRelease": "v2.16.0"
     },
     "vpsRequirements": {
@@ -334,10 +334,10 @@
     "setupDifficulty": "Advanced (Heavy Stack with ClickHouse & Kafka)",
     "setupTimeMinutes": 30,
     "githubStats": {
-      "stars": 40305,
-      "forks": 3518,
-      "openIssues": 5676,
-      "lastCommit": "2026-10-16",
+      "stars": 40345,
+      "forks": 3525,
+      "openIssues": 5687,
+      "lastCommit": "2026-10-19",
       "latestRelease": "latest"
     },
     "vpsRequirements": {
@@ -395,10 +395,10 @@
     "setupDifficulty": "Easy (Docker Compose)",
     "setupTimeMinutes": 10,
     "githubStats": {
-      "stars": 116409,
-      "forks": 7234,
-      "openIssues": 717,
-      "lastCommit": "2026-10-16",
+      "stars": 116643,
+      "forks": 7272,
+      "openIssues": 725,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v1.126.0"
     },
     "vpsRequirements": {
@@ -458,10 +458,10 @@
     "setupDifficulty": "Easy (1-Click DigitalOcean/Hostinger Image)",
     "setupTimeMinutes": 10,
     "githubStats": {
-      "stars": 55547,
-      "forks": 11996,
-      "openIssues": 208,
-      "lastCommit": "2026-10-16",
+      "stars": 55565,
+      "forks": 12006,
+      "openIssues": 211,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v5.112.0"
     },
     "vpsRequirements": {
@@ -520,10 +520,10 @@
     "setupDifficulty": "Easy (Single Go Binary + Postgres)",
     "setupTimeMinutes": 8,
     "githubStats": {
-      "stars": 23811,
-      "forks": 2684,
-      "openIssues": 93,
-      "lastCommit": "2026-10-16",
+      "stars": 23842,
+      "forks": 2693,
+      "openIssues": 59,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v4.1.0"
     },
     "vpsRequirements": {
@@ -581,10 +581,10 @@
     "setupDifficulty": "Easy (Single Docker Container)",
     "setupTimeMinutes": 5,
     "githubStats": {
-      "stars": 65290,
-      "forks": 5095,
-      "openIssues": 712,
-      "lastCommit": "2026-10-16",
+      "stars": 65293,
+      "forks": 5094,
+      "openIssues": 714,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v0.262.0"
     },
     "vpsRequirements": {
@@ -643,10 +643,10 @@
     "setupDifficulty": "Moderate (Rails + Sidekiq + Postgres + Redis)",
     "setupTimeMinutes": 15,
     "githubStats": {
-      "stars": 37860,
-      "forks": 9230,
-      "openIssues": 1601,
-      "lastCommit": "2026-10-16",
+      "stars": 37948,
+      "forks": 9255,
+      "openIssues": 1603,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v3.16.0"
     },
     "vpsRequirements": {
@@ -705,10 +705,10 @@
     "setupDifficulty": "Easy (Docker Compose)",
     "setupTimeMinutes": 10,
     "githubStats": {
-      "stars": 58418,
-      "forks": 9557,
-      "openIssues": 112,
-      "lastCommit": "2026-10-16",
+      "stars": 58527,
+      "forks": 9593,
+      "openIssues": 109,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v0.42.0"
     },
     "vpsRequirements": {
@@ -767,10 +767,10 @@
     "setupDifficulty": "Moderate (Requires OIDC/Google/Slack Auth Config)",
     "setupTimeMinutes": 20,
     "githubStats": {
-      "stars": 40920,
-      "forks": 3619,
-      "openIssues": 76,
-      "lastCommit": "2026-10-16",
+      "stars": 40970,
+      "forks": 3620,
+      "openIssues": 75,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v0.82.0"
     },
     "vpsRequirements": {
@@ -829,10 +829,10 @@
     "setupDifficulty": "Easy (Official Install CLI)",
     "setupTimeMinutes": 10,
     "githubStats": {
-      "stars": 60940,
-      "forks": 6094,
-      "openIssues": 1128,
-      "lastCommit": "2026-10-16",
+      "stars": 61124,
+      "forks": 6129,
+      "openIssues": 1136,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v0.25.0"
     },
     "vpsRequirements": {
@@ -891,10 +891,10 @@
     "setupDifficulty": "Moderate (Requires Google/Microsoft Calendar API Keys)",
     "setupTimeMinutes": 20,
     "githubStats": {
-      "stars": 49067,
-      "forks": 15358,
-      "openIssues": 1513,
-      "lastCommit": "2026-09-26",
+      "stars": 49149,
+      "forks": 15378,
+      "openIssues": 1515,
+      "lastCommit": "2026-10-18",
       "latestRelease": "v4.9.0"
     },
     "vpsRequirements": {
@@ -952,10 +952,10 @@
     "setupDifficulty": "Easy (Docker + Postgres + SMTP)",
     "setupTimeMinutes": 12,
     "githubStats": {
-      "stars": 15434,
-      "forks": 3349,
-      "openIssues": 208,
-      "lastCommit": "2026-10-16",
+      "stars": 15469,
+      "forks": 3372,
+      "openIssues": 217,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v1.10.0"
     },
     "vpsRequirements": {
@@ -1014,9 +1014,9 @@
     "setupDifficulty": "Easy (Single Ultra-Light Container)",
     "setupTimeMinutes": 5,
     "githubStats": {
-      "stars": 69160,
-      "forks": 3329,
-      "openIssues": 96,
+      "stars": 69294,
+      "forks": 3348,
+      "openIssues": 102,
       "lastCommit": "2026-10-16",
       "latestRelease": "1.33.2"
     },
@@ -1076,10 +1076,10 @@
     "setupDifficulty": "Easy (Single Command)",
     "setupTimeMinutes": 3,
     "githubStats": {
-      "stars": 92556,
-      "forks": 8567,
+      "stars": 92634,
+      "forks": 8570,
       "openIssues": 845,
-      "lastCommit": "2026-10-16",
+      "lastCommit": "2026-10-19",
       "latestRelease": "1.23.16"
     },
     "vpsRequirements": {
@@ -1137,10 +1137,10 @@
     "setupDifficulty": "Easy (Single Binary / Docker)",
     "setupTimeMinutes": 5,
     "githubStats": {
-      "stars": 59585,
-      "forks": 2739,
-      "openIssues": 321,
-      "lastCommit": "2026-10-15",
+      "stars": 59608,
+      "forks": 2746,
+      "openIssues": 322,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v1.12.0"
     },
     "vpsRequirements": {
@@ -1199,10 +1199,10 @@
     "setupDifficulty": "Easy (All-in-One Docker Installer)",
     "setupTimeMinutes": 15,
     "githubStats": {
-      "stars": 37143,
-      "forks": 5282,
-      "openIssues": 3832,
-      "lastCommit": "2026-10-16",
+      "stars": 37178,
+      "forks": 5286,
+      "openIssues": 3816,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v30.0.4"
     },
     "vpsRequirements": {
@@ -1260,10 +1260,10 @@
     "setupDifficulty": "Easy (Docker Compose)",
     "setupTimeMinutes": 12,
     "githubStats": {
-      "stars": 39352,
-      "forks": 9052,
-      "openIssues": 1088,
-      "lastCommit": "2026-10-16",
+      "stars": 39378,
+      "forks": 9057,
+      "openIssues": 1077,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v10.4.0"
     },
     "vpsRequirements": {
@@ -1322,10 +1322,10 @@
     "setupDifficulty": "Moderate (Builder + Viewer + Postgres + S3)",
     "setupTimeMinutes": 18,
     "githubStats": {
-      "stars": 10549,
-      "forks": 3237,
-      "openIssues": 17,
-      "lastCommit": "2026-10-15",
+      "stars": 10557,
+      "forks": 3238,
+      "openIssues": 15,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v3.2.0"
     },
     "vpsRequirements": {
@@ -1384,10 +1384,10 @@
     "setupDifficulty": "Easy (Single JVM Container + Postgres)",
     "setupTimeMinutes": 8,
     "githubStats": {
-      "stars": 49698,
-      "forks": 6906,
-      "openIssues": 4550,
-      "lastCommit": "2026-10-16",
+      "stars": 49734,
+      "forks": 6915,
+      "openIssues": 4559,
+      "lastCommit": "2026-10-19",
       "latestRelease": "v0.52.4"
     },
     "vpsRequirements": {
@@ -1445,10 +1445,10 @@
     "setupDifficulty": "Easy (Docker Compose)",
     "setupTimeMinutes": 10,
     "githubStats": {
-      "stars": 61220,
-      "forks": 4233,
-      "openIssues": 853,
-      "lastCommit": "2026-10-16",
+      "stars": 61361,
+      "forks": 4254,
+      "openIssues": 862,
+      "lastCommit": "2026-10-19",
       "latestRelease": "2.4.0"
     },
     "vpsRequirements": {
